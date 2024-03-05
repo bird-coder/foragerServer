@@ -1,0 +1,22 @@
+<logger>
+    <property name="level">debug</property>
+    <property name="logpath">./log/error.log</property>
+    <property name="maxsize">128</property>
+    <property name="age">7</property>
+    <property name="backups">30</property>
+    <property name="compress">false</property>
+    <groups name="fields">
+        <group>
+            <property name="key">appName</property>
+            <property name="val">forager</property>
+        </group>
+    </groups>
+    <group name="configKey">
+        <property name="message">msg</property>
+        <property name="level">level</property>
+        <property name="time">time</property>
+        <property name="name">logger</property>
+        <property name="caller">file</property>
+        <property name="stacktrace">stacktrace</property>
+    </group>
+</logger>

@@ -1,0 +1,9 @@
+<database>
+    <property name="protocol">tcp</property>
+    <property name="host">127.0.0.1</property>
+    <property name="port">3306</property>
+    <property name="user">root</property>
+    <property name="pass">root</property>
+    <property name="db">forager</property>
+    <property name="charset">utf8</property>
+</database>

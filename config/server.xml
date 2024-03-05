@@ -1,0 +1,6 @@
+<server>
+    <property name="env">development</property>
+    <property name="addr">:8081</property>
+    <property name="readtimeout">10</property>
+    <property name="writetimeout">10</property>
+</server>

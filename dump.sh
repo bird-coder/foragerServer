@@ -1,0 +1,1 @@
+~/go/pkg/mod/github.com/xxjwxc/gormt@v0.0.0-20211130083435-70b372293d1e/gormt -d=forager -uroot -proot -s=false -l=json -F=false

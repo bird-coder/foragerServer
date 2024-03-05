@@ -1,0 +1,5 @@
+/vendor
+/foragerServer
+/log/*.log
+/.idea
+/reverse.sh

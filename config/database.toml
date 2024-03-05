@@ -1,0 +1,53 @@
+[Mysql]
+  idleConns = 100
+  openConns = 200
+  idleTimeout = 3600000
+  aliveTimeout = 86400000
+  cluster = false
+  [Mysql.Default]
+    protocol = "tcp"
+    host = "127.0.0.1"
+    port = "3306"
+    user = "root"
+    pass = "root"
+    database = "forager"
+    charset = "utf8"
+    prefix = ""
+  [Mysql.Sources]
+    [[Sources]]
+      protocol = "tcp"
+      host = "127.0.0.1"
+      port = "3306"
+      user = "root"
+      pass = "root"
+      database = "forager"
+      charset = "utf8"
+      prefix = ""
+  [Mysql.Replicas]
+    [[Replicas]]
+      protocol = "tcp"
+      host = "127.0.0.1"
+      port = "3306"
+      user = "root"
+      pass = "root"
+      database = "forager"
+      charset = "utf8"
+      prefix = ""
+
+[Redis]
+  [Redis.Pool]
+    idel = 10
+    active = 10
+    idleTimeout = 10000
+    wait = true
+  [Redis.Dial]
+    dialTimeout = 1000
+    readTimeout = 1000
+    writeTimeout = 1000
+    protocol = "tcp"
+    addr = "127.0.0.1:6379"
+
+[Memcache]
+  addr = "127.0.0.1:11211"
+  idle = 20
+  timeout = 200
